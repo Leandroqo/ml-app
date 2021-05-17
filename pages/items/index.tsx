@@ -40,7 +40,7 @@ export default function Items({ items, error, categories }: Props) {
                     </div>
                     <div className={`${styles.listDescription} mb-16`}>
                       <div>
-                        <div className="mb-16">
+                        <div className="flex mb-16">
                           <div className="flex">
                             <Text.Span className="mr-10" size="24px">
                               {getCurrencyString(item.currency_id)}
@@ -56,6 +56,8 @@ export default function Items({ items, error, categories }: Props) {
                             <img
                               src="/images/ic_shipping.png"
                               className="ml-10"
+                              width="18px"
+                              height="18px"
                               alt={t("entrega grátis")}
                             />
                           )}
