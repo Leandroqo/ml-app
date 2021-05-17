@@ -45,7 +45,7 @@ export default function Item({ item, description, categories }: Props) {
         <div className="flex" data-testid="gallery">
           <div className={styles.itemImage}>
             <img
-              src={getWebpThumbnail(product?.thumbnail)}
+              src={getWebpThumbnail(product?.thumbnail, "F")}
               alt={product?.title}
             />
           </div>
