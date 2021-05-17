@@ -1,0 +1,13 @@
+@mixin setImageStyle($image-size, $align, $justify) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  overflow: hidden;
+  width: $image-size;
+  height: $image-size;
+
+  img {
+    max-width: $image-size;
+    max-height: $image-size;
+  }
+}

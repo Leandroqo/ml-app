@@ -1,0 +1,32 @@
+@import "styles/_variables.scss";
+@import "styles/_mixins.scss";
+
+$item-thumb-size: 180px;
+$item-thumb-border-radius: 4px;
+$item-thumb-border-size: 2px;
+$item-thumb-height: 210px;
+$item-thumb-description-width: 440px;
+
+.listItem {
+  display: flex;
+  height: $item-thumb-height;
+  border-bottom: $item-thumb-border-size solid $border-color;
+  cursor: pointer;
+}
+
+.listItem:last-child{
+  border-bottom: none;
+}
+
+.thumbnail {
+  @include setImageStyle($item-thumb-size, center, center);
+  border-radius: $item-thumb-border-radius;
+}
+
+.listDescription {
+  width: $item-thumb-description-width;
+}
+
+.locale {
+  margin-left: 140px;
+}

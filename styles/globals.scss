@@ -1,0 +1,76 @@
+@import "_variables";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: $background-color;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul, p, h1, h2 {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+$sizes: 50;
+
+@for $size from 0 through $sizes {
+  .m-#{$size} { margin: #{$size}px; }
+  .ml-#{$size} { margin-left: #{$size}px; }
+  .mr-#{$size} { margin-right: #{$size}px; }
+  .mt-#{$size} { margin-top: #{$size}px; }
+  .mb-#{$size} { margin-bottom: #{$size}px; }
+  .p-#{$size} { padding: #{$size}px; }
+  .pl-#{$size} { padding-left: #{$size}px; }
+  .pr-#{$size} { padding-right: #{$size}px; }
+  .pt-#{$size} { padding-top: #{$size}px; }
+  .pb-#{$size} { padding-bottom: #{$size}px; }
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 980px;
+  width: 980px;
+}
+
+header {
+  background-color: $background-accent-color;
+  
+  .content {
+    display: flex;
+    align-items: center;
+    height: 55px;
+
+    img {
+      margin-right: 24px;
+      cursor: pointer;
+    }
+  }
+}
+
+.content-page {
+  width: 100%;
+  background-color: $background-content-color;
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}

@@ -1,0 +1,12 @@
+@import "styles/_variables.scss";
+
+.breadcrumb {
+  display: flex;
+
+  li:not(:last-child)::after {
+    content: '>';
+    color: $secondary-color;
+    margin: 10px;
+  }
+
+}

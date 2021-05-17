@@ -1,0 +1,17 @@
+@import "styles/_variables.scss";
+@import "styles/_mixins.scss";
+
+$item-image-size: 580px;
+$item-image-description-size: 304px;
+
+.itemImage {
+  @include setImageStyle($item-image-size, flex-start, center);
+}
+
+.itemInfo {
+  width: $item-image-description-size;
+}
+
+.itemDescription {
+  width: $item-image-size;
+}
